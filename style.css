@@ -63,11 +63,12 @@ HTML {
 
 body {
 	color: #003;
-	background-image: url(image/whitewall.jpg);
 	/*
+	background-image: url(image/whitewall.jpg);
+
 	background-repeat: no-repeat;
-	background-size: auto;
-*/
+	background-size: auto;*/
+
 }
 
 
