@@ -25,6 +25,12 @@ HTML {
 	scroll-behavior: smooth;
 }
 
+
+
+
+
+
+
 .jump {
 	text-decoration: none;
 	color: black;
@@ -45,10 +51,26 @@ HTML {
 
 }
 
+#feet {
+	display: grid;
+	/* 	flex-direction: row-reverse;
+	align-self: flex-start; */
+	grid-template-columns: repeat(3, 1fr);
+	-ms-align-items: center;
+	align-items: center;
+}
+
 
 body {
 	color: #003;
+	background-image: url(image/whitewall.jpg);
+	/*
+	background-repeat: no-repeat;
+	background-size: auto;
+*/
 }
+
+
 
 img {
 	/*	border: 1px solid grey;*/
