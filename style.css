@@ -44,12 +44,23 @@ main {
 
 }
 
+div.headerWrap {
+	background-color: yellow;
+}
+
 li {
 	list-style-type: none;
 	font-family: Avenir, Roboto, Helvetica, san-serif;
 
 }
 
+.venue_name {
+	padding-left: 2rem;
+}
+
+.artist_name {
+	padding-left: 2rem;
+}
 
 /*working on modal*/
 
@@ -71,6 +82,7 @@ button {
 
 .butt {
 	background: pink;
+
 }
 
 button:focus,
@@ -97,8 +109,15 @@ button:active {
 
 .tracking-in-expand-fwd-top {
 	animation: tracking-in-expand-fwd-top .8s cubic-bezier(.215, .61, .355, 1.000) both;
-	font-size: 4rem;
+	/*	font-size: 4rem;*/
 	padding-left: .5em;
+	/*	margin: 5rem;*/
+	padding: 4rem;
+
+	/*	font-family: Avenir,
+Roboto,
+Helvetica,
+san-serif;*/
 
 }
 
