@@ -1,6 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+
 * {
 	box-sizing: border-box;
 }
+
+h1{
+	text-align: center;
+	text-decoration: none;
+}
+
+::root{
+	--h1-font: 'Crimson Pro', serif;
+
+
+}
+ul li{
+	float: right;
+	display: inline-block;
+	margin: 1rem;
+	font-family:var(--h1-font);
+}
+
+
 
 body {
 	color: #003;
@@ -20,6 +42,7 @@ main {
 	max-width: 1300px;
 	grid-template-rows: 1fr;
 	margin: 0, auto;
+
 }
 
 li {
