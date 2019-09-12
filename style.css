@@ -21,3 +21,7 @@ main {
 	grid-template-rows: 1fr;
 	margin: 0, auto;
 }
+
+li {
+	list-style-type: none;
+}
