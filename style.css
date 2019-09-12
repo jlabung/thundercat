@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa|Monoton|Poiret+One|Prompt|Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Major+Mono+Display|Sumana|Yatra+One&display=swap');
 
 * {
 	box-sizing: border-box;
 }
 
-/*
-h1{
-	text-align: center;
-	text-decoration: none;
-}
-*/
+
 
 ::root {
 	--h1-font: 'Crimson Pro', serif;
@@ -17,14 +14,12 @@ h1{
 
 }
 
-/*
-ul li {
-	float: right;
-	display: inline-block;
-	margin: 1rem;
-	font-family: var(--h1-font);
+/*ul li {*/
+/*	float: right;*/
+/*	display: inline-block;*/
+/*	margin: 1rem;*/
+/*	font-family: var(--h1-font);*/
 }
-*/
 
 
 
@@ -51,6 +46,7 @@ main {
 
 li {
 	list-style-type: none;
+
 }
 
 
@@ -92,6 +88,36 @@ button:active {
 	background-color: var(--bg-color);
 }
 
+.pichov {
+	border-radius: 10px;
+	width: 10rem;
+	height: 10rem;
+}
+
+.tracking-in-expand-fwd-top {
+	animation: tracking-in-expand-fwd-top .8s cubic-bezier(.215, .61, .355, 1.000) both;
+	font-size: 4rem;
+	padding-left: .5em;
+
+}
+
+
+@keyframes tracking-in-expand-fwd-top {
+	0% {
+		letter-spacing: -.5em;
+		transform: translateZ(-700px) translateY(-500px);
+		opacity: 0
+	}
+
+	40% {
+		opacity: .6
+	}
+
+	100% {
+		transform: translateZ(0) translateY(0);
+		opacity: 1
+	}
+}
 
 .hide {
 	display: none;
