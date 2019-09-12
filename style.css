@@ -5,37 +5,11 @@
 * {
 	box-sizing: border-box;
 }
-/*
 
-<<<<<<< HEAD
-h1{
-	text-align: center;
-	text-decoration: none;
-}
-*/
-=======
->>>>>>> origin/master
-
-
-::root {
+:root {
 	--h1-font: 'Crimson Pro', serif;
+	--link-hover-color: pink;
 
-
-}
-<<<<<<< HEAD
-/*
-ul li{
-	float: right;
-	display: inline-block;
-	margin: 1rem;
-	font-family:var(--h1-font);
-=======
-
-/*ul li {*/
-/*	float: right;*/
-/*	display: inline-block;*/
-/*	margin: 1rem;*/
-/*	font-family: var(--h1-font);*/
 }
 
 HTML {
@@ -48,9 +22,9 @@ HTML {
 	padding-left: 2.2rem;
 	font-size: 1.2rem;
 	font-family: Avenir, Roboto, Helvetica, san-serif;
->>>>>>> origin/master
+
 }
-*/
+
 
 .jumptop {
 	text-decoration: none;
@@ -58,10 +32,7 @@ HTML {
 	font-size: 1.2rem;
 	padding-left: 2.2rem;
 	font-family: Avenir, Roboto, Helvetica, san-serif;
-	/*	position: absolute;*/
-	/* display: flex; */
 	text-align: left;
-
 }
 
 
@@ -78,17 +49,17 @@ img {
 
 main {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, min-max(300px, 1fr));
+	grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
 	grid-gap: 1rem;
 	max-width: 1300px;
 	grid-template-rows: 1fr;
-	margin: 0, auto;
+	margin: 0 auto;
 
 }
-<<<<<<< HEAD
+
 li {
 	list-style-type: none;
-=======
+}
 
 div.headerWrap {
 	background-color: yellow;
@@ -114,7 +85,7 @@ li {
 button {
 	padding: 1rem;
 	border-radius: 20px;
-	background: var(--color-4);
+	background-color: var(--color-4);
 	text-align: center;
 	text-decoration: none;
 	font: bold 1.90em/1 "Open Sans", sans-serif;
@@ -145,7 +116,7 @@ button:hover {
 }
 
 button:active {
-	background-color: var(--bg-color);
+	background-color: var(--link-hover-color);
 }
 
 .pichov {
@@ -161,28 +132,23 @@ button:active {
 	/*	margin: 5rem;*/
 	padding: 4rem;
 
-	/*	font-family: Avenir,
-Roboto,
-Helvetica,
-san-serif;*/
 
-}
 
 
 @keyframes tracking-in-expand-fwd-top {
 	0% {
 		letter-spacing: -.5em;
-		transform: translateZ(-700px) translateY(-500px);
-		opacity: 0
+		transform: translateZ(-700px),  translateY(-500px);
+		opacity: 0;
 	}
 
 	40% {
-		opacity: .6
+		opacity: .6;
 	}
 
 	100% {
-		transform: translateZ(0) translateY(0);
-		opacity: 1
+		transform: translateZ(0), translateY(0);
+		opacity: 1;
 	}
 }
 
@@ -203,8 +169,6 @@ san-serif;*/
 .modal-content {
 	background-color: #fefefe;
 	border: 1px solid #7c1f17;
-	margin: 1em;
+	margin: 1rem;
 	padding: 2em;
-
->>>>>>> origin/master
 }
