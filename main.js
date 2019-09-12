@@ -18,10 +18,10 @@ function showVenue(data){
 }
 
 function showEvent(venueData){
-//	const template = document.querySelector("template").content;
-//	const copy = template.cloneNode(true);
-//	copy.querySelector("h1").textContent = venueData.gsx$address.$t;
-//	console.log(venueData.gsx$address)
-//	document.querySelector("header").appendChild(copy);
+	const template = document.querySelector("template").content;
+	const copy = template.cloneNode(true);
+	copy.querySelector("h1").textContent = venueData.gsx$address.$t;
+	console.log(venueData.gsx$address)
+	document.querySelector("main").appendChild(copy);
 }
 
