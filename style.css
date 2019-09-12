@@ -1,8 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
 
-*{
-	box-sizing: border-box;
-}
 h1{
 	text-align: center;
 	text-decoration: none;
@@ -17,6 +15,30 @@ ul li{
 	float: right;
 	display: inline-block;
 	margin: 1rem;
-	font-family:var(--h1-font)
-;
+	font-family:var(--h1-font);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #003;
+}
+
+img {
+	/*	border: 1px solid grey;*/
+	border-radius: 2px;
+	padding: 5px;
+	width: 300px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, min-max(300px, 1fr));
+	grid-gap: 1rem;
+	max-width: 1300px;
+	grid-template-rows: 1fr;
+	margin: 0, auto;
+
 }
