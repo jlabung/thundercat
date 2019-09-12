@@ -9,5 +9,15 @@ fetch(link).then(res => res.json()).then(showVenue);
 
 function showVenue(data){
 	console.log(data)
-
+	const myArray = data.feed.entry;
+	myArray.forEach(showEvent);
 }
+
+function showEvent(venueData){
+//	const template = document.querySelector("template").content;
+//	const copy = template.cloneNode(true);
+//	copy.querySelector("h1").textContent = venueData.gsx$address.$t;
+//	console.log(venueData.gsx$address)
+//	document.querySelector("header").appendChild(copy);
+}
+
