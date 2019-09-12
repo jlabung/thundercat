@@ -21,6 +21,19 @@
 /*	font-family: var(--h1-font);*/
 }
 
+HTML {
+	scroll-behavior: smooth;
+}
+
+.jump {
+	text-decoration: none;
+	color: black;
+	padding-left: 2.2rem;
+	font-size: 1.2rem;
+	font-family: Avenir, Roboto, Helvetica, san-serif;
+}
+
+
 
 
 body {
