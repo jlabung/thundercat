@@ -33,7 +33,17 @@ HTML {
 	font-family: Avenir, Roboto, Helvetica, san-serif;
 }
 
+.jumptop {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2rem;
+	padding-left: 2.2rem;
+	font-family: Avenir, Roboto, Helvetica, san-serif;
+	/*	position: absolute;*/
+	/* display: flex; */
+	text-align: left;
 
+}
 
 
 body {
