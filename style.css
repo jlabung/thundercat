@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
 h1{
 	text-align: center;
 	text-decoration: none;
@@ -18,9 +22,7 @@ ul li{
 	font-family:var(--h1-font);
 }
 
-* {
-	box-sizing: border-box;
-}
+
 
 body {
 	color: #003;
