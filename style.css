@@ -25,6 +25,8 @@ HTML {
 	scroll-behavior: smooth;
 }
 
+
+
 .jump {
 	text-decoration: none;
 	color: black;
@@ -48,6 +50,7 @@ HTML {
 
 body {
 	color: #003;
+	/*	background-color: #E7A9C4;*/
 }
 
 img {
@@ -137,7 +140,9 @@ button:active {
 	padding-left: .5em;
 	/*	margin: 5rem;*/
 	padding: 4rem;
-
+	/*	text-shadow: 2px 2px #fff;*/
+	color: black;
+	text-shadow: 2px 2px 2px white;
 	/*	font-family: Avenir,
 Roboto,
 Helvetica,
