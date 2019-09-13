@@ -8,7 +8,7 @@
 
 :root {
 	--h1-font: 'Crimson Pro', serif;
-	--link-hover-color: pink;
+	--link-hover-color: yellow;
 
 }
 
@@ -45,10 +45,29 @@ body {
 
 img {
 	/*	border: 1px solid grey;*/
+
+	/*
 	border-radius: 2px;
-	padding: 5px;
-	width: 300px;
+	padding: 1vw;
+	max-width: 100%;
+	height: 250px;
+	width: auto;
+*/
+
+
+
+	max-width: 240px;
+/*	padding: 1vw;*/
+	display: block;
+	margin-top: auto;
+	height: auto;
+	align-self: center;
+
+
 }
+
+
+
 
 .showclones {
 	display: grid;
@@ -109,6 +128,8 @@ button {
 	margin-top: auto;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1rem;
+
 
 
 }
@@ -116,6 +137,7 @@ button {
 .event-item {
 	display: flex;
 	flex-direction: column;
+	padding: 1em;
 }
 
 .butt {
