@@ -20,10 +20,13 @@ function showEvent(venueData) {
 	const template = document.querySelector("template").content;
 	const copy = template.cloneNode(true);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;
 	console.log(venueData.gsx$address)
 	document.querySelector(".cloneshere").appendChild(copy);
 =======
+=======
+>>>>>>> origin/master
 
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
 
@@ -53,5 +56,8 @@ copy.querySelector(".data_img").src = "img/"+ venueData.gsx$logo.$t + ".jpg";	co
 //});
 	document.querySelector("header").appendChild(copy);
 
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }

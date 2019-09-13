@@ -57,6 +57,7 @@ img {
 	max-width: 1300px;
 	grid-template-rows: 1fr;
 	margin: 0 auto;
+<<<<<<< HEAD
 
 }
 
@@ -65,6 +66,8 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 }
+=======
+>>>>>>> origin/master
 
 .event-item {
 	grid-column-start: 1;
@@ -73,6 +76,10 @@ img {
 li {
 	list-style-type: none;
 >>>>>>> origin/master
+}
+
+li {
+	list-style-type: none;
 }
 
 div.headerWrap {
@@ -146,6 +153,7 @@ button:active {
 	/*	margin: 5rem;*/
 	padding: 4rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/*	text-shadow: 2px 2px #fff;*/
 	color: black;
 	text-shadow: 2px 2px 2px white;
@@ -153,6 +161,9 @@ button:active {
 Roboto,
 Helvetica,
 san-serif;*/
+=======
+
+>>>>>>> origin/master
 =======
 
 >>>>>>> origin/master
