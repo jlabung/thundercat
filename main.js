@@ -17,8 +17,8 @@ function showVenue(data) {
 function showEvent(venueData) {
 	const template = document.querySelector("template").content;
 	const copy = template.cloneNode(true);
-//
-//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
+	//
+	//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
 
 
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
@@ -47,6 +47,6 @@ function showEvent(venueData) {
 	//	})
 	//
 	//});
-	document.querySelector(".cloneshere").appendChild(copy);
+	document.querySelector(".showclones").appendChild(copy);
 
 }
