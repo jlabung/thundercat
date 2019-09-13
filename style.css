@@ -16,6 +16,8 @@ HTML {
 	scroll-behavior: smooth;
 }
 
+
+
 .jump {
 	text-decoration: none;
 	color: black;
@@ -38,6 +40,7 @@ HTML {
 
 body {
 	color: #003;
+	/*	background-color: #E7A9C4;*/
 }
 
 img {
@@ -47,19 +50,28 @@ img {
 	width: 300px;
 }
 
-.showclones{
+.showclones {
 	display: grid;
-	grid-template-rows: repeat(auto-fill, minmax(300px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 1rem;
-	max-width: 1200px;
+	max-width: 1300px;
 	grid-template-rows: 1fr;
 	margin: 0 auto;
-	border: 2px solid black;
-
 }
-.cloneshere{
+
+.cloneshere {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.event-item {
+	grid-column-start: 1;
+	width: min-max(300px, 1fr);
+}
+
+li {
+	list-style-type: none;
+
 }
 
 li {
@@ -137,45 +149,53 @@ button:active {
 	/*	margin: 5rem;*/
 	padding: 4rem;
 
+	/*	text-shadow: 2px 2px #fff;*/
+	color: black;
+	text-shadow: 2px 2px 2px white;
+	/*	font-family: Avenir,
+Roboto,
+Helvetica,
+san-serif;*/
 
 
 
-@keyframes tracking-in-expand-fwd-top {
-	0% {
-		letter-spacing: -.5em;
-		transform: translateZ(-700px),  translateY(-500px);
-		opacity: 0;
+
+	@keyframes tracking-in-expand-fwd-top {
+		0% {
+			letter-spacing: -.5em;
+			transform: translateZ(-700px), translateY(-500px);
+			opacity: 0;
+		}
+
+		40% {
+			opacity: .6;
+		}
+
+		100% {
+			transform: translateZ(0), translateY(0);
+			opacity: 1;
+		}
 	}
-
-	40% {
-		opacity: .6;
-	}
-
-	100% {
-		transform: translateZ(0), translateY(0);
-		opacity: 1;
-	}
-}
 
 /*
-.hide {
-	display: none;
-}
+	.hide {
+		display: none;
+	}
 
-.modal-background {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-}
+	.modal-background {
+		position: fixed;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 
-.modal-content {
-	background-color: #fefefe;
-	border: 1px solid #7c1f17;
-	margin: 1rem;
-	padding: 2em;
-}
+	.modal-content {
+		background-color: #fefefe;
+		border: 1px solid #7c1f17;
+		margin: 1rem;
+		padding: 2em;
+	}
 */
