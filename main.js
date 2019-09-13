@@ -33,5 +33,5 @@ function showEvent(venueData) {
 	const copy = template.cloneNode(true);
 	copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;
 	console.log(venueData.gsx$address)
-	document.querySelector("header").appendChild(copy);
+	document.querySelector(".cloneshere").appendChild(copy);
 }
