@@ -6,19 +6,10 @@
 	box-sizing: border-box;
 }
 
-
-
-::root {
+:root {
 	--h1-font: 'Crimson Pro', serif;
+	--link-hover-color: pink;
 
-
-}
-
-/*ul li {*/
-/*	float: right;*/
-/*	display: inline-block;*/
-/*	margin: 1rem;*/
-/*	font-family: var(--h1-font);*/
 }
 
 HTML {
@@ -33,7 +24,9 @@ HTML {
 	padding-left: 2.2rem;
 	font-size: 1.2rem;
 	font-family: Avenir, Roboto, Helvetica, san-serif;
+
 }
+
 
 .jumptop {
 	text-decoration: none;
@@ -41,10 +34,7 @@ HTML {
 	font-size: 1.2rem;
 	padding-left: 2.2rem;
 	font-family: Avenir, Roboto, Helvetica, san-serif;
-	/*	position: absolute;*/
-	/* display: flex; */
 	text-align: left;
-
 }
 
 
@@ -62,14 +52,15 @@ img {
 
 .showclones {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, min-max(300px, 1fr));
+	grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
 	grid-gap: 1rem;
 	max-width: 1300px;
 	grid-template-rows: 1fr;
-	margin: 0, auto;
+	margin: 0 auto;
 
 }
 
+<<<<<<< HEAD
 .cloneshere {
 	display: flex;
 	flex-wrap: wrap;
@@ -78,6 +69,10 @@ img {
 .event-item {
 	grid-column-start: 1;
 	width: min-max(300px, 1fr);
+=======
+li {
+	list-style-type: none;
+>>>>>>> origin/master
 }
 
 div.headerWrap {
@@ -104,7 +99,7 @@ li {
 button {
 	padding: 1rem;
 	border-radius: 20px;
-	background: var(--color-4);
+	background-color: var(--color-4);
 	text-align: center;
 	text-decoration: none;
 	font: bold 1.90em/1 "Open Sans", sans-serif;
@@ -135,7 +130,7 @@ button:hover {
 }
 
 button:active {
-	background-color: var(--bg-color);
+	background-color: var(--link-hover-color);
 }
 
 .pichov {
@@ -150,6 +145,7 @@ button:active {
 	padding-left: .5em;
 	/*	margin: 5rem;*/
 	padding: 4rem;
+<<<<<<< HEAD
 	/*	text-shadow: 2px 2px #fff;*/
 	color: black;
 	text-shadow: 2px 2px 2px white;
@@ -157,24 +153,26 @@ button:active {
 Roboto,
 Helvetica,
 san-serif;*/
+=======
 
-}
+>>>>>>> origin/master
+
 
 
 @keyframes tracking-in-expand-fwd-top {
 	0% {
 		letter-spacing: -.5em;
-		transform: translateZ(-700px) translateY(-500px);
-		opacity: 0
+		transform: translateZ(-700px),  translateY(-500px);
+		opacity: 0;
 	}
 
 	40% {
-		opacity: .6
+		opacity: .6;
 	}
 
 	100% {
-		transform: translateZ(0) translateY(0);
-		opacity: 1
+		transform: translateZ(0), translateY(0);
+		opacity: 1;
 	}
 }
 
@@ -195,7 +193,6 @@ san-serif;*/
 .modal-content {
 	background-color: #fefefe;
 	border: 1px solid #7c1f17;
-	margin: 1em;
+	margin: 1rem;
 	padding: 2em;
-
 }
