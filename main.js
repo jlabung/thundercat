@@ -2,7 +2,7 @@ const sheetID = "100qQoIcKg2L2TTRjjEwimTeGiT_wnrp66IskS4nIBOw";
 
 
 
-const link = https://spreadsheets.google.com/feeds/list/${sheetID}/od6/public/values?alt=json;
+const link = `https://spreadsheets.google.com/feeds/list/${sheetID}/od6/public/values?alt=json`;
 
 fetch(link).then(res => res.json()).then(showVenue);
 
@@ -17,12 +17,11 @@ function showVenue(data) {
 function showEvent(venueData) {
 	const template = document.querySelector("template").content;
 	const copy = template.cloneNode(true);
-
-	//	copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
+//
+//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
 
 
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
-
 
 	copy.querySelector(".data_img").src = "img/" + venueData.gsx$logo.$t + ".jpg";
 	console.log(venueData.gsx$logo.$t)
@@ -50,5 +49,4 @@ function showEvent(venueData) {
 	//});
 	document.querySelector(".cloneshere").appendChild(copy);
 
-	document.querySelector("header").appendChild(copy);
 }
