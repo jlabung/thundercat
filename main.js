@@ -33,20 +33,22 @@ function showEvent(venueData) {
 
 	copy.querySelector(".eventAddress").textContent = venueData.gsx$address.$t;
 
-	//	const button = document.querySelector("button");
-	//button.addEventListener("click", () => {
-	//	modal.classList.remove("hide")
-	//})
-	//const modal = document.querySelector(".modal-background");
-	//
-	//modal.addEventListener("click", () => {
-	//	modal.classList.add("hide");
-	//
-	//	button.addEventListener("click", () => {
-	//		modal.classList.remove("hide")
-	//	})
-	//
-	//});
+	copy.querySelector("button").addEventListener("click", function () {
+		modal.classList.remove("hide");
+	})
+
+
 	document.querySelector(".showclones").appendChild(copy);
 
 }
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+	modal.classList.add("hide");
+
+
+});
+
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+	modal.classList.remove("hide")
+})
