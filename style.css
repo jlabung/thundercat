@@ -8,7 +8,7 @@
 
 :root {
 	--h1-font: 'Crimson Pro', serif;
-	--link-hover-color: pink;
+	--link-hover-color: yellow;
 
 }
 
@@ -45,36 +45,49 @@ body {
 
 img {
 	/*	border: 1px solid grey;*/
+
+	/*
 	border-radius: 2px;
-	padding: 5px;
-	width: 300px;
+	padding: 1vw;
+	max-width: 100%;
+	height: 250px;
+	width: auto;
+*/
+
+
+
+	max-width: 240px;
+/*	padding: 1vw;*/
+	display: block;
+	margin-top: auto;
+	height: auto;
+	align-self: center;
+
+
 }
 
-.showclones{
+
+
+
+.showclones {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, auto));
 	grid-gap: 1rem;
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
 
-}
-/*.cloneshere{
-	display: grid;
+
 }
 
-
-}*/
 .event-item {
 	border: 2px solid black;
+
 }
 li {
 	list-style-type: none;
 
 }
 
-li {
-	list-style-type: none;
-}
 
 div.headerWrap {
 	background-color: yellow;
@@ -110,7 +123,20 @@ button {
 	text-shadow: 3px -3px 0px #0374a0;
 	transition: all 0.5s ease;
 	cursor: pointer;
-	margin: 0 1rem 1rem 0;
+	/*	margin: 0 1rem 1rem 0;*/
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+
+
+
+}
+
+.event-item {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
 }
 
 .butt {
@@ -155,42 +181,40 @@ button:active {
 
 
 
-	@keyframes tracking-in-expand-fwd-top {
-		0% {
-			letter-spacing: -.5em;
-			transform: translateZ(-700px), translateY(-500px);
-			opacity: 0;
-		}
-
-		40% {
-			opacity: .6;
-		}
-
-		100% {
-			transform: translateZ(0), translateY(0);
-			opacity: 1;
-		}
+@keyframes tracking-in-expand-fwd-top {
+	0% {
+		letter-spacing: -.5em;
+		transform: translateZ(-700px), translateY(-500px);
+		opacity: 0;
 	}
 
-/*
-	.hide {
-		display: none;
+	40% {
+		opacity: .6;
 	}
 
-	.modal-background {
-		position: fixed;
-		z-index: 10;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
+	100% {
+		transform: translateZ(0), translateY(0);
+		opacity: 1;
 	}
+}
 
-	.modal-content {
-		background-color: #fefefe;
-		border: 1px solid #7c1f17;
-		margin: 1rem;
-		padding: 2em;
-	}
-*/
+.hide {
+	display: none;
+}
+
+.modal-background {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	border: 1px solid #7c1f17;
+	margin: 1rem;
+	padding: 2em;
+}

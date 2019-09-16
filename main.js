@@ -17,8 +17,8 @@ function showVenue(data) {
 function showEvent(venueData) {
 	const template = document.querySelector("template").content;
 	const copy = template.cloneNode(true);
-//
-//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
+	//
+	//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
 
 
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
@@ -34,20 +34,22 @@ function showEvent(venueData) {
 
 	copy.querySelector(".eventAddress").textContent = venueData.gsx$address.$t;
 
-	//	const button = document.querySelector("button");
-	//button.addEventListener("click", () => {
-	//	modal.classList.remove("hide")
-	//})
-	//const modal = document.querySelector(".modal-background");
-	//
-	//modal.addEventListener("click", () => {
-	//	modal.classList.add("hide");
-	//
-	//	button.addEventListener("click", () => {
-	//		modal.classList.remove("hide")
-	//	})
-	//
-	//});
-	document.querySelector(".showclones").appendChild(copy);
+
+	copy.querySelector("button").addEventListener("click", function () {
+		modal.classList.remove("hide");
+	})
+
+document.querySelector(".showclones").appendChild(copy);
 
 }
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+	modal.classList.add("hide");
+
+
+});
+
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+	modal.classList.remove("hide")
+})
