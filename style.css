@@ -210,6 +210,10 @@ footer {
 	display: none;
 }
 
+p.feets {
+	text-align: center;
+}
+
 .modal-background {
 	position: fixed;
 	z-index: 10;
