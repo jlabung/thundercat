@@ -1,3 +1,9 @@
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+	modal.classList.add("hide");
+	console.log(copy.querySelector(".data_img").src);
+});
+
 const sheetID = "100qQoIcKg2L2TTRjjEwimTeGiT_wnrp66IskS4nIBOw";
 
 
@@ -26,6 +32,7 @@ function showEvent(venueData) {
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
 
 	copy.querySelector(".data_img").src = "img/" + venueData.gsx$logo.$t + ".jpg";
+	console.log(copy.querySelector(".data_img").src);
 
 
 	console.log(venueData.gsx$logo.$t)
@@ -39,18 +46,17 @@ function showEvent(venueData) {
 
 
 	copy.querySelector("button").addEventListener("click", function () {
+		modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
 		modal.classList.remove("hide");
+
+
 	})
 
 	document.querySelector(".showclones").appendChild(copy);
 
 }
-const modal = document.querySelector(".modal-background");
-modal.addEventListener("click", () => {
-	modal.classList.add("hide");
 
 
-});
 
 
 //SORT BUTTON IDEA BELOW
@@ -73,9 +79,3 @@ function compareByName(a, b) {
 //function compareByName(a, b) {
 //	return a - b;
 //}
-
-console.log(venue);
-const button = document.querySelector("button");
-button.addEventListener("click", () => {
-	modal.classList.remove("hide")
-})
