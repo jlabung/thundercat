@@ -4,6 +4,7 @@ const sheetID = "100qQoIcKg2L2TTRjjEwimTeGiT_wnrp66IskS4nIBOw";
 
 const link = `https://spreadsheets.google.com/feeds/list/${sheetID}/od6/public/values?alt=json`;
 
+
 fetch(link).then(res => res.json()).then(showVenue);
 
 
@@ -17,6 +18,7 @@ function showVenue(data) {
 function showEvent(venueData) {
 	const template = document.querySelector("template").content;
 	const copy = template.cloneNode(true);
+
 	//
 	//		copy.querySelector(".data_date").textContent = venueData.gsx$address.$t;	console.log(venueData.gsx$address)
 
@@ -53,3 +55,28 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
 	modal.classList.remove("hide")
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
