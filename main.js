@@ -24,6 +24,7 @@ function showEvent(venueData) {
 	copy.querySelector(".venue_name").textContent = venueData.gsx$venue.$t;
 
 	copy.querySelector(".data_img").src = "img/" + venueData.gsx$logo.$t + ".jpg";
+
 	console.log(venueData.gsx$logo.$t)
 	copy.querySelector(".artist_name").textContent = venueData.gsx$eventname.$t;
 
@@ -47,6 +48,6 @@ function showEvent(venueData) {
 	//	})
 	//
 	//});
-	document.querySelector(".cloneshere").appendChild(copy);
+	document.querySelector(".showclones").appendChild(copy);
 
 }

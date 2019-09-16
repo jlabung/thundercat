@@ -50,25 +50,23 @@ img {
 	width: 300px;
 }
 
-.showclones {
+.showclones{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, auto));
 	grid-gap: 1rem;
-	max-width: 1300px;
-	grid-template-rows: 1fr;
+	max-width: 1200px;
 	margin: 0 auto;
+
+}
+/*.cloneshere{
+	display: grid;
 }
 
-.cloneshere {
-	display: flex;
-	flex-wrap: wrap;
-}
 
+}*/
 .event-item {
-	grid-column-start: 1;
-	width: min-max(300px, 1fr);
+	border: 2px solid black;
 }
-
 li {
 	list-style-type: none;
 
