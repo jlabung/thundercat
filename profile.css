@@ -71,18 +71,19 @@ img {
 
 .showclones {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(620px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-gap: 1rem;
-	max-width: 1300px;
+	max-width: 1100px;
 	margin: 0 auto;
-
-
 }
+
+
 
 .event-item {
 	border: 2px solid black;
 
 }
+
 li {
 	list-style-type: none;
 

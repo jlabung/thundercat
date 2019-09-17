@@ -1,3 +1,12 @@
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+	modal.classList.add("hide");
+
+
+});
+
+
+
 const sheetID = "100qQoIcKg2L2TTRjjEwimTeGiT_wnrp66IskS4nIBOw";
 
 
@@ -38,23 +47,16 @@ function showEvent(venueData) {
 
 
 	copy.querySelector("button").addEventListener("click", function () {
+		fetch(`1OAaQkVzxQfBTnI-BBHuOmtLOrl_oQTBozRTsF0WvxDY`)
 		modal.classList.remove("hide");
+		modal.querySelector(".modal-image").src = "img/"+ venueData.gsx$logo.$t+ ".jpg";
 	})
 
 document.querySelector(".showclones").appendChild(copy);
 
 }
-const modal = document.querySelector(".modal-background");
-modal.addEventListener("click", () => {
-	modal.classList.add("hide");
 
 
-});
-
-const button = document.querySelector("button");
-button.addEventListener("click", () => {
-	modal.classList.remove("hide")
-})
 
 
 
