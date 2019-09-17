@@ -25,7 +25,7 @@ function showEvent(venueData) {
 
 	copy.querySelector(".profile").textContent = venueData.gsx$profile.$t;
 
-	copy.querySelector(".profilepicture").src = "img/" + venueData.gsx$profilepicture.$t + "_n.jpg";
+	copy.querySelector(".profilepicture").src = "img/" + venueData.gsx$profilepicture.$t + ".jpg";
 	console.log(venueData.gsx$profilepicture.$t)
 	copy.querySelector(".profilename").textContent = venueData.gsx$profilename.$t;
 
