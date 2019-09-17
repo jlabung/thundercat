@@ -18,6 +18,7 @@ HTML {
 
 
 
+
 .jump {
 	text-decoration: none;
 	color: black;
@@ -57,7 +58,7 @@ img {
 
 
 	max-width: 240px;
-/*	padding: 1vw;*/
+	/*	padding: 1vw;*/
 	display: block;
 	margin-top: auto;
 	height: auto;
@@ -83,6 +84,7 @@ img {
 	border: 2px solid black;
 
 }
+
 li {
 	list-style-type: none;
 
@@ -105,7 +107,9 @@ li {
 
 .artist_name {
 	padding-left: 2rem;
-	font-family: 'Lexend Exa', sans-serif;
+	/*	text-align: center;*/
+	font-size: 4vh;
+	font-family: 'PT Serif', sans-serif;
 }
 
 /*working on modal*/
@@ -198,8 +202,16 @@ button:active {
 	}
 }
 
+footer {
+	padding-top: 2em;
+}
+
 .hide {
 	display: none;
+}
+
+p.feets {
+	text-align: center;
 }
 
 .modal-background {
