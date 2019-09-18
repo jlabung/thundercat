@@ -1,6 +1,9 @@
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+	modal.classList.add("hide");});
+
+
 const profileID = "1OAaQkVzxQfBTnI-BBHuOmtLOrl_oQTBozRTsF0WvxDY";
-
-
 
 const profileLink = `https://spreadsheets.google.com/feeds/list/${profileID}/od6/public/values?alt=json`;
 
@@ -36,23 +39,20 @@ function showEvent(venueData) {
 
 	copy.querySelector("button").addEventListener("click", function () {
 		modal.classList.remove("hide");
+		modal.querySelector(".pickoftheweek").textContent = venueData.gsx$pickoftheweek.$t;
+		modal.querySelector(".modal_image").src = "img/"+venueData.gsx$pickimage.$t+".jpg";
+		modal.querySelector(".modal_description").textContent = venueData.gsx$pickdescription.$t;
+		modal.querySelector(".modal_date").textContent = venueData.gsx$date.$t;
+		modal.querySelector(".modal_price").textContent = venueData.gsx$price.$t;
 	})
 
 
 	document.querySelector(".showclones").appendChild(copy);
 
 }
-const modal = document.querySelector(".modal-background");
-modal.addEventListener("click", () => {
-	modal.classList.add("hide");
 
-//modal.querySelector(".pickoftheweek").textContent = venueData.gsx$pickoftheweek;
 
-});
 
-/*
-const button = document.querySelector("button");
-console.log(button);
-button.addEventListener("click", () => {
-	modal.classList.remove("hide")
-})*/
+
+
+

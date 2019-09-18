@@ -46,6 +46,9 @@ function showEvent(venueData) {
 //		fetch(`1OAaQkVzxQfBTnI-BBHuOmtLOrl_oQTBozRTsF0WvxDY`)
 		modal.classList.remove("hide");
 		modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
+		modal.querySelector(".modal-name").textContent = venueData.gsx$eventname.$t;
+		modal.querySelector(".modal-description").textContent = venueData.gsx$description.$t;
+		modal.querySelector(".modal-date").textContent = venueData.gsx$eventdate.$t;
 	})
 
 	document.querySelector(".showclones").appendChild(copy);
@@ -53,8 +56,8 @@ function showEvent(venueData) {
 
 
 
-modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
-modal.classList.remove("hide");
+//modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
+//modal.classList.remove("hide");
 
 
 
@@ -68,7 +71,7 @@ document.querySelector(".showclones").appendChild(copy);
 
 //SORT BUTTON IDEA BELOW
 
-var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset"];
+var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset" ,"Culture Box", "Amager Bio", "Ved Siden Af"];
 
 venue.sort(compareByName);
 
