@@ -82,14 +82,18 @@ img {
 
 .event-item {
 	border: 2px solid black;
-
 }
 
 li {
 	list-style-type: none;
 
 }
-
+div.headerWrap{
+	background-color: yellow;
+	display: flex;
+	justify-content: flex-end;
+	height: 209px;
+}
 
 div.headerWrap {
 	background-color: yellow;
@@ -234,4 +238,14 @@ p.feets{
 }
 .img-wrapper img{
 	margin-top: 0px;
+}
+.tracking-in-expand-fwd-top{
+	position: absolute;
+	left: 0;
+	padding-left: 2em;
+}
+#logo{
+	width:  15vw;
+	padding-right: 3em;
+	padding-top: 3em;
 }

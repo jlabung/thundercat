@@ -72,16 +72,16 @@ img {
 
 .showclones {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(620px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(320px, auto));
 	grid-gap: 1rem;
 	max-width: 1300px;
 	margin: 0 auto;
-	padding-top: 1.3rem;
-
+/*	padding-top: 1.3rem;*/
 }
 
 .event-item {
 	border: 2px solid black;
+
 }
 
 li {
@@ -92,6 +92,13 @@ li {
 
 div.headerWrap {
 	background-color: yellow;
+	display: flex;
+	justify-content: flex-end;
+	height: 209px;
+
+}
+div.headerWrap img{
+	margin-top: 0;
 }
 
 li {
@@ -229,3 +236,14 @@ p.feets {
 	margin: 1rem;
 	padding: 2em;
 }
+.tracking-in-expand-fwd-top{
+	position: absolute;
+	left: 0;
+	padding-left: 2em;
+}
+#logo{
+	width:  15vw;
+	padding-right: 3em;
+	padding-top: 3em;
+}
+
