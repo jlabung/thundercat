@@ -56,8 +56,8 @@ function showEvent(venueData) {
 
 
 
-modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
-modal.classList.remove("hide");
+//modal.querySelector(".modal-image").src = "img/" + venueData.gsx$logo.$t + ".jpg";
+//modal.classList.remove("hide");
 
 
 
@@ -71,7 +71,7 @@ document.querySelector(".showclones").appendChild(copy);
 
 //SORT BUTTON IDEA BELOW
 
-var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset"];
+var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset" ,"Culture Box", "Amager Bio", "Ved Siden Af"];
 
 venue.sort(compareByName);
 

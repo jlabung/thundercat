@@ -75,6 +75,7 @@ img {
 	grid-gap: 1rem;
 	max-width: 1100px;
 	margin: 0 auto;
+	padding-top: 1.2rem;
 }
 
 
@@ -218,4 +219,10 @@ button:active {
 	border: 1px solid #7c1f17;
 	margin: 1rem;
 	padding: 2em;
+}
+footer{
+	padding-top: 1.2rem;
+}
+p.feets{
+	text-align: center;
 }
