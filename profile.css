@@ -226,3 +226,12 @@ footer{
 p.feets{
 	text-align: center;
 }
+.img-wrapper{
+	height: 280px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.img-wrapper img{
+	margin-top: 0px;
+}
