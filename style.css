@@ -81,7 +81,7 @@ img {
 
 .event-item {
 	border: 2px solid black;
-	background-image: url(img/70269387_422467318622063_1064509177616924672_n.jpg);
+
 }
 
 li {
@@ -244,5 +244,6 @@ p.feets {
 #logo{
 	width:  15vw;
 	padding-right: 3em;
+	padding-top: 3em;
 }
 

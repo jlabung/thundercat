@@ -88,7 +88,12 @@ li {
 	list-style-type: none;
 
 }
-
+div.headerWrap{
+	background-color: yellow;
+	display: flex;
+	justify-content: flex-end;
+	height: 209px;
+}
 
 div.headerWrap {
 	background-color: yellow;
@@ -214,7 +219,7 @@ button:active {
 }
 
 .modal-content {
-	background-image: url(img/70269387_422467318622063_1064509177616924672_n.jpg);
+	border-color: #fefefe;
 	border: 1px solid #7c1f17;
 	margin: 1rem;
 	padding: 2em;
@@ -233,4 +238,14 @@ p.feets{
 }
 .img-wrapper img{
 	margin-top: 0px;
+}
+.tracking-in-expand-fwd-top{
+	position: absolute;
+	left: 0;
+	padding-left: 2em;
+}
+#logo{
+	width:  15vw;
+	padding-right: 3em;
+	padding-top: 3em;
 }
