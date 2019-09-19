@@ -23,7 +23,7 @@ HTML {
 	color: black;
 	padding-left: 2.2rem;
 	font-size: 1.2rem;
-	font-family: Avenir, Roboto, Helvetica, san-serif;
+	font-family: 'Crimson Text', serif;
 
 }
 
@@ -71,7 +71,7 @@ img {
 
 .showclones {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 1rem;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -91,8 +91,21 @@ li {
 div.headerWrap{
 	background-color: yellow;
 	display: flex;
-	justify-content: flex-end;
+	align-items: center;
 	height: 209px;
+	margin-bottom: 2em;
+   padding: 0 2vh;
+
+}
+
+.tracking-in-expand-fwd-top,
+#logoId {
+	width: 100%;
+	display: flex;
+}
+
+#logoId {
+	justify-content: flex-end;
 }
 
 div.headerWrap {
@@ -124,7 +137,7 @@ button {
 	text-decoration: none;
 	font: bold 1.90em/1 "Open Sans", sans-serif;
 	letter-spacing: 1px;
-	color: white;
+	color: whitesmoke;
 	text-transform: uppercase;
 	text-shadow: 3px -3px 0px #0374a0;
 	transition: all 0.5s ease;
@@ -175,9 +188,7 @@ button:active {
 .tracking-in-expand-fwd-top {
 	animation: tracking-in-expand-fwd-top .8s cubic-bezier(.215, .61, .355, 1.000) both;
 	/*	font-size: 4rem;*/
-	padding-left: .5em;
 	/*	margin: 5rem;*/
-	padding: 4rem;
 
 	/*	text-shadow: 2px 2px #fff;*/
 	color: black;
@@ -240,12 +251,10 @@ p.feets{
 	margin-top: 0px;
 }
 .tracking-in-expand-fwd-top{
-	position: absolute;
 	left: 0;
-	padding-left: 2em;
 }
 #logo{
-	width:  15vw;
-	padding-right: 3em;
-	padding-top: 3em;
+	max-width:  11.5vw;
+
 }
+

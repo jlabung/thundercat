@@ -76,7 +76,7 @@ img {
 	grid-gap: 1rem;
 	max-width: 1300px;
 	margin: 0 auto;
-/*	padding-top: 1.3rem;*/
+	padding-top: 1.3rem;
 }
 
 .event-item {
@@ -94,10 +94,23 @@ div.headerWrap {
 	background-color: yellow;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	height: 209px;
+	margin-bottom: 2em;
+	padding: 0 2vh;
 
 }
-div.headerWrap img{
+.tracking-in-expand-fwd-top,
+#logoId {
+	width: 100%;
+	display: flex;
+}
+
+#logoId {
+	justify-content: flex-end;
+}
+
+div.headerWrap img {
 	margin-top: 0;
 }
 
@@ -178,10 +191,6 @@ button:active {
 
 .tracking-in-expand-fwd-top {
 	animation: tracking-in-expand-fwd-top .8s cubic-bezier(.215, .61, .355, 1.000) both;
-	/*	font-size: 4rem;*/
-	padding-left: .5em;
-	/*	margin: 5rem;*/
-	padding: 4rem;
 
 	/*	text-shadow: 2px 2px #fff;*/
 	color: black;
@@ -236,14 +245,18 @@ p.feets {
 	margin: 1rem;
 	padding: 2em;
 }
-.tracking-in-expand-fwd-top{
-	position: absolute;
+
+.tracking-in-expand-fwd-top {
 	left: 0;
-	padding-left: 2em;
 }
-#logo{
-	width:  15vw;
-	padding-right: 3em;
-	padding-top: 3em;
+
+#logo {
+	max-width: 11.5vw;
+
 }
+@media screen and (max-width:500px) {
+img#logo{
+		width:  11.5vh;
+		}
+	}
 
