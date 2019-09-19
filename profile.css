@@ -254,7 +254,19 @@ p.feets{
 	left: 0;
 }
 #logo{
-	max-width:  11.5vw;
+	width:  11.5vw;
 
+}
+@media only screen and (max-width: 631px) {
+img#logo{
+		width:  11.5vh;
+		}
+	}
+@media only screen and (max-width: 631px) {
+	p.feets{
+		margin-left: 2vw;
+		text-align: left;
+
+	}
 }
 
