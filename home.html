@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Copenhagen Music Weekly</title>
-	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -15,15 +15,17 @@
 	<header class="mainheader">
 		<div class="headerWrap">
 			<h1 class="tracking-in-expand-fwd-top">Copenhagen Music Weekly</h1>
-		<div id="logoId">
-			<a href="home.html">
+			<div id="logoId">
+			<a href="profile.html">
 				<img id="logo" src="img/logo-square-02.png" alt="logo">
 			</a>
-			</div>
+				</div>
 		</div>
 	</header>
+	<br>
 
 	<a href="#feet" class="jump">&#x21E9; SCROLL TO BOTTOM &#x21E9;</a>
+
 	<section class="showclones">
 
 	</section>
@@ -32,27 +34,25 @@
 	<main>
 		<template>
 			<section class="event-item">
-				<h1 class="profilename">Lydmor</h1>
-				<div class="img-wrapper">
-					<img class="profilepicture" src="" alt="">
-				</div>
-
-
-				<h2 class="profile">Profile</h2>
+				<h1 class="artist_name">Lydmor</h1>
+				<img class="data_img" src="" alt="">
+				<h2 class="venue_name">Store Vega</h2>
 				<ul>
-					<!--					<li class="venue_name">Store Vega</li>-->
-					<li class="profileinfo">Info</li><br>
-					<li class="musicinfo">Listening to:</li><br>
-				</ul>
+					<li class="eventDate">Sold Out</li><br>
+					<li class="eventDescription">130 kr</li><br>
+					<li class="eventAddress">15.10.2019</li><br>
 
-				<button class="show-modal butt">Pick of the Week</button>
+
+				</ul>
+				<img class="data_logo" src="" alt=""><br>
+
+				<button class="show-modal butt">Event</button>
 
 			</section>
 		</template>
 
 <!--		<a href="#feet" class="jump">&#x21E9; SCROLL TO BOTTOM &#x21E9;</a>-->
 
-<!-------------------------PROFILES------------------------------------------>
 
 
 
@@ -74,17 +74,14 @@
 
 	<div class="modal-background hide">
 		<div class="modal-content">
-			<h3 class="pickoftheweek">EVENT NAME</h3>
-            <img src="" alt="" class="modal_image" >
-			<p class="modal_description">More about the event and how great the artist is !!</p>
-			<h3 class="modal_date">15.10.2019</h3>
-			<h3 class="modal_price">here goes the price</h3>
-			<button id="event">
-			<a href="index.html">For more Event</a></button>
+			<h3 class="modal-name">EVENT NAME</h3><img src="img/lydmor.jpg" alt="lydmorpic" class="modal-image" width="300" height="180">
+			<p class="modal-description">More about the event and how great the artist is !!</p>
+			<h3 class="modal-date">15.10.2019</h3>
+			<h3 class="modal-price">200kr</h3>
 		</div>
 	</div>
 
-	<script src="profile.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>

@@ -3,83 +3,34 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Copenhagen Music Weekly</title>
-	<link rel="stylesheet" href="style.css">
+	<title>video page</title>
+	<link rel="stylesheet" href="video.css">
 </head>
 
+<body>
 
-<body id="top">
+	<div>
 
-	<header class="mainheader">
-		<div class="headerWrap">
-			<h1 class="tracking-in-expand-fwd-top">Copenhagen Music Weekly</h1>
-			<a href="profile.html">
-				<img id="logo" src="img/logo-square-02.png" alt="logo">
-			</a>
-		</div>
-	</header>
-	<br>
-
-	<a href="#feet" class="jump">&#x21E9; SCROLL TO BOTTOM &#x21E9;</a>
-
-	<section class="showclones">
-
-	</section>
+		<iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/BpP3sH5ei2Q?rel=0;&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-	<main>
-		<template>
-			<section class="event-item">
-				<h1 class="artist_name">Lydmor</h1>
-				<img class="data_img" src="" alt="">
-				<h2 class="venue_name">Store Vega</h2>
-				<ul>
-					<li class="eventDate">Sold Out</li><br>
-					<li class="eventDescription">130 kr</li><br>
-					<li class="eventAddress">15.10.2019</li><br>
-
-
-				</ul>
-				<img class="data_logo" src="" alt=""><br>
-
-				<button class="show-modal butt">Event</button>
-
-			</section>
-		</template>
-
-<!--		<a href="#feet" class="jump">&#x21E9; SCROLL TO BOTTOM &#x21E9;</a>-->
-
-
-
-
-
-	</main>
-
-	<!--	<div class="full-width-foot">-->
-	<footer id="feet">
-		<a href="#top" class="jumptop">&#8679; GO TO TOP &#8679;</a>
-		<p class="feets">
-			&copy; 2019 Copenhagen Music Weekly
-		</p>
-
-
-	</footer>
-
-
-	<!--	</div>-->
-
-	<div class="modal-background hide">
-		<div class="modal-content">
-			<h3 class="modal-name">EVENT NAME</h3><img src="img/lydmor.jpg" alt="lydmorpic" class="modal-image" width="300" height="180">
-			<p class="modal-description">More about the event and how great the artist is !!</p>
-			<h3 class="modal-date">15.10.2019</h3>
-			<h3 class="modal-price">200kr</h3>
-		</div>
 	</div>
 
-	<script src="main.js"></script>
+	<div class="content">
+		<h1>Copenhagen Music Weekly</h1>
+		<p>bringing the best to Copenhagen</p>
+		<button class="myBtn">
+			<a class="tick" href="profile.html" target="_blank">Enter</a>
+		</button>
+		<!-- Use a button to pause/play the video with JavaScript -->
+	</div>
+
+
+
+	<script src="video.js">
+
+	</script>
 </body>
 
 </html>
