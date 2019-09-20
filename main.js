@@ -68,6 +68,7 @@ document.querySelector(".showclones").appendChild(copy);
 
 //SORT BUTTON IDEA BELOW
 
+
 var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset"];
 
 venue.sort(compareByName);
