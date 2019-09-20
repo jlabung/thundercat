@@ -72,12 +72,11 @@ img {
 
 .showclones {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(620px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(320px, auto));
 	grid-gap: 1rem;
 	max-width: 1300px;
 	margin: 0 auto;
 	padding-top: 1.3rem;
-
 }
 
 .event-item {
@@ -93,6 +92,27 @@ li {
 
 div.headerWrap {
 	background-color: yellow;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 209px;
+	margin-bottom: 2em;
+	padding: 0 2vh;
+
+}
+
+.tracking-in-expand-fwd-top,
+#logoId {
+	width: 100%;
+	display: flex;
+}
+
+#logoId {
+	justify-content: flex-end;
+}
+
+div.headerWrap img {
+	margin-top: 0;
 }
 
 li {
@@ -116,7 +136,7 @@ li {
 
 button {
 	padding: 1rem;
-	border-radius: 20px;
+	border-radius: 12px;
 	background-color: var(--color-4);
 	text-align: center;
 	text-decoration: none;
@@ -144,7 +164,7 @@ button {
 }
 
 .butt {
-	background: pink;
+	background: whitesmoke;
 
 }
 
@@ -172,10 +192,6 @@ button:active {
 
 .tracking-in-expand-fwd-top {
 	animation: tracking-in-expand-fwd-top .8s cubic-bezier(.215, .61, .355, 1.000) both;
-	/*	font-size: 4rem;*/
-	padding-left: .5em;
-	/*	margin: 5rem;*/
-	padding: 4rem;
 
 	/*	text-shadow: 2px 2px #fff;*/
 	color: black;
@@ -229,4 +245,27 @@ p.feets {
 	border: 1px solid #7c1f17;
 	margin: 1rem;
 	padding: 2em;
+}
+
+.tracking-in-expand-fwd-top {
+	left: 0;
+}
+
+#logo {
+	width: 11.5vw;
+
+}
+
+@media only screen and (max-width: 631px) {
+	img#logo {
+		width: 11.5vh;
+	}
+}
+
+@media only screen and (max-width: 631px) {
+	p.feets {
+		margin-left: 2vw;
+		text-align: left;
+
+	}
 }
