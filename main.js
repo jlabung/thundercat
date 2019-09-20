@@ -71,12 +71,9 @@ document.querySelector(".showclones").appendChild(copy);
 
 //SORT BUTTON IDEA BELOW
 
-<<<<<<< HEAD
 
-var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset"];
-=======
 var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR Koncerthuset" ,"Culture Box", "Amager Bio", "Ved Siden Af"];
->>>>>>> origin/master
+
 
 venue.sort(compareByName);
 
