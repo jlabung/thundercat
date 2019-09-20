@@ -76,6 +76,7 @@ var venue = ["Vega", "Loppen", "Pumpehuset", "Mayhem", "Alice", "Stengade", "DR 
 
 
 venue.sort(compareByName);
+console.log(venue);
 
 function compareByName(a, b) {
 
